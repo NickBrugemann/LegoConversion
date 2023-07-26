@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BrickBrowserHelper.cs" />
     <Compile Include="BrickHelper.cs" />
     <Compile Include="BrickInfo.cs" />
     <Compile Include="ClearPictureBox.cs">
@@ -93,6 +94,12 @@
   <ItemGroup>
     <None Include="Resources\2x4.png" />
     <None Include="Resources\1x4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="examples\007.png" />
+    <Content Include="examples\025.png" />
+    <Content Include="examples\141.png" />
+    <Content Include="examples\150.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

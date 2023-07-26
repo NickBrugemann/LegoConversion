@@ -116,11 +116,15 @@ namespace PixelCounter
                         pbMatch.Height = 32;
                         pbMatch.Location = new Point(180 + (c* 32), 20 + (counter2 * margin));
                         panel2.Controls.Add(pbMatch);
+                        pbMatch.Click += delegate
+                        {
+                            BrickBrowserHelper.BrowseUrl(match.Key, brickInformation);
+                        };
 
 
                         Label lMatch = new Label();
                         lMatch.Text = Math.Round(100 - match.Value, 2) + "%";
-                        lMatch.Font = new Font(lMatch.Font.Name, 6F);
+                        lMatch.Font = new Font(lMatch.Font.Name, 7F);
                         lMatch.AutoSize = true;
                         lMatch.Location = new Point(180 + (c * 32), 50 + (counter2 * margin));
                         panel2.Controls.Add(lMatch);
