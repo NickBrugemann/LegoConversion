@@ -124,7 +124,7 @@ namespace PixelCounter
 
                         Label lMatch = new Label();
                         lMatch.Text = Math.Round(100 - match.Value, 2) + "%";
-                        lMatch.Font = new Font(lMatch.Font.Name, 7F);
+                        lMatch.Font = new Font(lMatch.Font.Name, 6F);
                         lMatch.AutoSize = true;
                         lMatch.Location = new Point(180 + (c * 32), 50 + (counter2 * margin));
                         panel2.Controls.Add(lMatch);
